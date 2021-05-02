@@ -9,3 +9,8 @@ informations about cleanCode
 
 ### english
 * [Imperative vs Declarative Programming – the Difference Explained in Plain English](https://www.freecodecamp.org/news/imperative-vs-declarative-programming-difference/)
+
+
+## software
+* [Jave Code Coverage Tools](https://en.wikipedia.org/wiki/Java_code_coverage_tools)
+* [SonarQube](https://www.sonarqube.org/)
