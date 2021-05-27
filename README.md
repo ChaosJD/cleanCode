@@ -8,7 +8,8 @@ informations about cleanCode
 * [Wie sich Softwareverrottung verhindern lässt](https://www.golem.de/news/it-in-unternehmen-wie-sich-software-rot-verhindern-laesst-2103-154383.html)
 * [Der Dreamliner braucht spätestens nach 51 Tagen einen Reboot](https://www.golem.de/news/boeing-757-der-dreamliner-braucht-spaetestens-nach-51-tagen-einen-reboot-2004-147696.html)
 * [In den Neunzigern stürzte alles ab](https://www.golem.de/news/softwarefehler-in-der-raumfahrt-in-den-neunzigern-stuerzte-alles-ab-1511-117537.html)
-* [Résumé-Driven Development: Wie IT-Trends den Jobmarkt beeinflussen](https://heise.de/-6051956 )
+* [Résumé-Driven Development: Wie IT-Trends den Jobmarkt beeinflussen](https://heise.de/-6051956)
+* [Ohne passende Werkzeuge geht das nicht](https://www.golem.de/news/softwareentwicklung-ohne-passende-werkzeuge-geht-das-nicht-2104-153931.html)
 
 
 ### English
