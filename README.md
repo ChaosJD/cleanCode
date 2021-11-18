@@ -10,6 +10,7 @@ informations about cleanCode
 * [In den Neunzigern stürzte alles ab](https://www.golem.de/news/softwarefehler-in-der-raumfahrt-in-den-neunzigern-stuerzte-alles-ab-1511-117537.html)
 * [Résumé-Driven Development: Wie IT-Trends den Jobmarkt beeinflussen](https://heise.de/-6051956)
 * [Ohne passende Werkzeuge geht das nicht](https://www.golem.de/news/softwareentwicklung-ohne-passende-werkzeuge-geht-das-nicht-2104-153931.html)
+* [20 Dinge, die ich in 20 Jahren als Entwickler gelernt habe](https://www.golem.de/news/software-20-dinge-die-ich-in-20-jahren-als-entwickler-gelernt-habe-2111-161015.html)
 
 
 ### English
