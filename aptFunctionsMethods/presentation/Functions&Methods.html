@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions&Methods</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+
+      body { font-family: 'Droid Serif'; }
+         h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubutnu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+# Story-Time
+Your colleague goes into pension. You take over a project from him in an Embedded field. The colleague is known as well coder
+with good documentation. Due to the last days he's got lazy. You find one part of a Code Section: And was amazed:
+
+
+---
+# Pension Function
+
+```
+static void  function1(int p1, int p2, int p3) {
+  int v1=12, v2=1324, v3=31, v4=13, v5=121, v6=87;
+  System.out.println("Now it starts");
+  if (p1 > v1) {
+      while (p1 > v2) {
+          for (v3 = 12; v3 <= 192; v3++) {
+              for (v4 = v3; v4 < v1; v1++) {
+                  int tmp = p2;
+                  p2 = v5;
+                  v4 = tmp;
+              }
+              System.out.println("Scan a Digit");
+              Scanner scanner = new Scanner(System.in);
+              System.out.println("thanks;)");
+          }
+      }
+      //doo somthing more....
+  }
+
+
+public static void main(String[] args) {
+  funktion1(2,3,4);
+
+}
+
+
+
+```
+---
+
+class: center, middle
+
+# Functions / Methods
+
+---
+
+# Content
+
+1. Basics
+1. Meaningful names
+1. Functions
+---
+
+class: center, middle
+
+# Basics
+
+---
+
+# Naming Conventions
+* It should start with lowercase letter.
+* If the name contains multiple words, start it with a lowercase letter followed by an uppercase letter such as actionPerformed().
+
+```
+class Employee{
+  //method
+  void draw(){
+    // some stuff
+  }
+}
+```
+
+---
+
+class: top, center
+# Method Definition
+
+![Methodendefinition](pics/methodendefinition.png)
+
+---
+class: center, middle
+
+#  Method Declaration & Call<!-- Methodendeclaration & -aufruf -->
+
+![Methodendeklaration&Aufruf](pics/MethodendeklarationMethodenaufruf.png)
+.left[
+Formal Parameters => Methodname( double a, double b)<br>
+Actual  Parameters =>  Methodname(20,30)
+]
+
+
+---
+
+
+# Methods Overload
+bad example -> 3 Parameters
+<!-- [OverloadMethdods](pics/OverloadMethods.png) -->
+
+```
+static double avg ( int x, int y){
+  return (x + y) / 2;
+}
+
+static double avg( double x, double y){
+  return (x + y) / 2;
+}
+
+static double avg( double x, double, y, double z){
+  return (x + y + z)  / 3;
+}
+
+static double avg ( int x, int y, int z){
+  return (x + y + z) / 3;
+}
+```
+
+---
+
+class: left, top
+
+# Variable Parameter List
+
+```
+  public void methodA( double... param){
+    ...
+  }
+
+  public void methodB ( int a, byte b, boolen... c){
+    ...
+  }
+
+```
+
+---
+class: top, left
+
+# Do Not Use Obfuscators
+
+<dl>
+ <dt>Obfuscator</dt>
+ <dd>In software development, obfuscation is the deliberate act of creating
+   source or machine code that is difficult for humans to understand. Like
+   obfuscation in natural language, it may use needlessly roundabout expressions
+    to compose statements. Programmers may deliberately obfuscate code to
+    conceal its purpose (security through obscurity) or its logic or implicit
+    values embedded in it, primarily, in order to prevent tampering, deter
+    reverse engineering, or even as a puzzle or recreational challenge for
+    someone reading the source code. This can be done manually or by using an
+    automated tool, the latter being the preferred technique in industry</dd>
+</dl>
+
+---
+class: middle, center
+# Meaningful Names
+---
+
+# Naming Variables, Functions, Classes
+
+- Why exist it?
+- What does it?
+- How it used it?
+
+The best name is to use no comments to describe it.
+If a name requires a comment, then the name does not reveal its intent.
+
+Examples:
+
+```
+Bad:
+  int d; // elapsed time in days
+Good:
+  int elapsedTimeInDays;
+```
+---
+
+ # Disinformation
+
+ * If you are coding a hypotenuse and hp looks like a good abbreviation, it
+ could be disinformative.
+ * Beware of using names which vary in small ways.
+ * Do **not** use lower case L or uppercase O
+
+Examples
+ ```
+ int a = l;
+ if ( O == l )
+   a = O1;
+ else
+   l = 01;
+ ```
+ ```
+ XYZControllerForEfficientHandlingOfStrings
+ XYZControllerForEfficientStorageOfStrings
+ ```
+---
+
+# Meaningful Distinction
+
+````
+public static void copyChars(char a1[], char a2[]) {
+   for (int i = 0; i < a1.length; i++) {
+     a2[i] = a1[i];
+   }
+ }
+```
+What is source?<br>
+What is destination?
+
+Indistinct words:
+* Info
+* Data
+* a
+* an
+* the
+
+---
+
+# Pronounceable Names
+
+Make names pronounceable
+```
+Bad:
+  class DtaRcrd102 {
+    private Date genymdhms;
+    private Date modymdhms;
+    private final String pszqint = ”102”;
+    /* … */
+  };
+Good:
+  class Customer {
+    private Date generationTimestamp;
+    private Date modificationTimestamp;;
+    private final String recordId = ”102”;
+    /* … */
+  };
+```
+.center[
+Write Names **out**!
+]
+
+
+---
+
+# Use Searchable Names, Part 1
+
+Longer names trump shorter names, and any searchable name trumps a constant
+in code.<br>
+.center[
+**Avoid Encodings**
+]
+
+```
+Bad:
+  for (int j=0; j<34; j++) {
+     s += (t[j]*4)/5;
+   }
+Good:
+  int realDaysPerIdealDay = 4;
+     const int WORK_DAYS_PER_WEEK = 5;
+     int sum = 0;
+     for (int j=0; j < NUMBER_OF_TASKS; j++) {
+       int realTaskDays = taskEstimate[j] * realDaysPerIdealDay;
+       int realTaskWeeks = (realdays / WORK_DAYS_PER_WEEK);
+       sum += realTaskWeeks;
+     }
+```
+
+---
+
+# Use Searchable Names, Part 2
+
+<div style="width:100%;height:0;padding-bottom:55%;position:relative;">
+  <iframe src="https://giphy.com/embed/l0MYIH1uwQf49mSFq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+  </iframe>
+</div>
+
+---
+
+ # Hungarian Notation
+
+ ```
+ Bad:
+   PhoneNumber phoneString;  // name not changed when type changed!
+```
+# No Member Prefixes
+```
+Bad:
+  public class Part {
+     private String m_dsc; // The textual description
+     void setName(String name) {
+       m_dsc = name;
+     }
+   }
+Good:
+  public class Part {
+     String description;
+     void setDescription(String description) {
+     this.description = description;
+     }
+   }
+```
+
+---
+
+# Interfaces & Implemenation
+
+Use: ShapeFactoryImpl
+
+---
+
+# Avoid Mental Mapping
+
+Loop counter:
+* i
+* j
+* k
+
+**Never** l because One (1)
+
+Programmers are smart people. Smart people like to show off their smarts by
+demonstrating their mental juggling abilities.<br>
+**Avoid That**<br>
+Clarity is King!
+
+---
+
+class: center
+Class Names -> makes the next group
+
+---
+
+# Method Names
+They should have:
+* verbs,
+* verb phrases like postPayment, deletePage or savePage
+
+<br>When constructors are overloaded use static factory methods with names That
+describe the arguments.<br>
+
+The basics:
+```
+public static final SomeClass myStaticMethod(){
+  return new SomeClass();
+}
+```
+---
+
+# Example of a Factory Method
+
+```
+public Class Coordinate{
+  private double xCord;
+  pivate double yCord;
+
+  private Coordingate(double x, double y)  {
+    xCord = x;
+    yCord = y;
+  }
+
+  public static final Coordinate fromXY (double x, double y){
+    return new Coordinate(x, y);
+  }
+
+  public static final Coordinate fromPolar (double dist, double angel){
+    return new Coordinate(dist*Math.cos(angel, dist *Math.sin(anle));
+  }
+}
+```
+Another Execution Example:
+```
+Complex fulcrumPoint = Complex.FromRealNumber(23.0);
+```
+---
+
+# Don't be cute
+Do you know what will happen by the first examples? <br>
+
+| Dirty | Clean |
+| --- | --- |
+| HolyHandGrenade | DelteItems |
+| eatMyshorts() | abort() |
+<br>
+
+A consistent Lexicon is a
+great boon.
+
+# Don't Pun
+
+Use ***insert()*** and ***append()*** instead of add().
+
+---
+
+# Use Solution Domain Names
+
+AccountVisitor -> VisitorPattern <br>
+Choosing technical names for those things is usually the most appropriate course.
+
+# Use Problem Domain names
+When there is no Programming technique for what you are doing, use the name
+form the problem domain.<br>
+Seperating solutions and problem domain concepts is a part of the job of a good
+programmer and designer
+
+---
+
+# Add Meaningful Context
+
+* addrFirstName
+* addrLastName
+* addrState
+* and so on
+
+#  Don't add Gratuitous Context
+Shorter names are generally better than longer ones, so long as they are clear.
+<br>
+<br>
+<!-- Final Words-->
+You need:
+* descriptive Skills
+* shared cultural background
+* Don't be afraid of Renaming
+* Use Refactoring Tools
+
+???
+Gratuitous  = kostenlos
+---
+class: middle, center
+# Functions
+
+---
+
+class: top, left
+# Functions
+
+* Functions are the first line of organization in any program.
+* Functions should be small.
+* Functions should be smaller.
+* Each led you to the next in a compelling order.
+<br>
+<br>
+.center[
+  ![FunctionWidthHeight](pics/drawsIo/jpg/FunctionsWidthHeight.jpg)
+]
+
+---
+# Blocks And Indenting - Arrow Code
+
+* if
+* else
+* while
+
+**should be one line!**
+```
+Tenary Operator:
+  a > b ? "a is greater" : "b is greater"
+```
+```
+if ( a > b ) {
+  "a is greater";
+}
+else{
+  "b is greater";
+}
+```
+
+```
+if( a> b) "a is greater";
+else "b is greater";
+```
+The indent level of a function should not be greater than one or two.
+
+???
+The indent level of a function should not be greater than one or two.
+=> Der Einrückungsgrad einer Funktion sollte nicht größer als eins oder zwei sein.
+
+---
+
+# Arrow Code
+
+```
+if{ //the End is near
+  if{ // End!!!!
+    if{ //Much
+      if{ // Too Much
+        if{ // Way too much!
+          if{ // Go Home!
+            if{ // Why?
+              if{ // Ok, but...
+                if{ //Äh???
+                  if{ // no comment
+                    if{ // Yes, you reached it, now!
+                      //do some stuff ======>
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+---
+class: middle, center
+
+ # Do One Thing
+
+
+
+
+
+---
+class: middle
+**FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL.<br>
+THEY SHOULD DO IT ONLY**
+
+* **Aids The Reader**
+* **Promote Reuse**
+* **Eases Naming & Testing**
+* **Avoid Sideeffects**
+
+???
+aids the reader = unterstützt den Leser
+eases = erleichtert
+
+---
+# TO paragraph
+
+So every function began with the word “TO.” This had an interesting effect on
+the way functions were designed.
+<br>
+<br>
+If a function does only those steps that are one level below the stated
+name of the function, then **the function is doing one thing.**
+
+---
+
+# One Level of Abstraction per Function
+
+intermediate level:
+```
+String pagePathName = PathParser.render(pagePath);
+```
+
+low level:
+```
+.append(”\n”).
+
+```
+---
+# Switch Statement
+
+.center[
+Use a abstract Factory Class
+]
+
+
+---
+
+# Use Descriptive Names
+A long descriptive name is better than a long descriptive comment. <br>
+Use a naming convention that allows multiple words to be easily read in the
+function names, and then make use of those multiple words to give the function
+a name that says what it does.<br>
+.center[
+  **The Sequence should tell a Story**
+]
+
+---
+# Function Arguments
+
+## Useless
+* Niladic (0) **best Solution**
+* Polyadic (More then three Arguments)
+
+## Usable
+1. Monadic
+1. Dyadic
+1. Triadic
+
+
+---
+
+# Common Monadic Forms
+* Choose names that make the distinction clear
+
+```
+boolean fileExists(“MyFile”)
+InputStream fileOpen(“MyFile”)
+```
+
+* Using an output argument instead of a return value for a transformation is confusing.
+
+```
+Good:
+  StringBuffer transform(StringBuffer in);
+Bad:
+  void transform(StringBuffer out);
+```
+
+---
+class: middle, center
+## Flag Arguments
+
+ **Passing a boolean into a function is a truly terrible practice**
+
+---
+
+## Dyadic Functions
+* The parts we ignore are where the bugs will hide.
+
+Bad:
+```
+  writeField(output-Stream, name);
+  assertEquals(expected, actual);
+```
+Good:
+```
+  writeField(name);
+  assertExpectedEqualsActual(expected, actual);
+```
+
+---
+
+## Triads
+```
+Bad:
+  insidious: assertEquals(1.0, amount, .001);
+  ResponseEntity<Map> responseEntity =
+    restTemplate.postForEntity(REST_SERVICE_URI+"/contract/",  contract,  Map.class);
+```
+
+???
+insidious = heimtückisch
+---
+
+## Polyadic
+
+```
+ResponseEntity<Map> responseEntity1 =
+  restTemplate.exchange
+    (REST_SERVICE_URI+"/contract/"+ID,  HttpMethod.PUT,  entity,  Map.class);
+```
+---
+
+# Argument Objects
+
+Bad:
+
+```
+Circle makeCircle(double x, double y, double radius);
+```
+Good:
+```
+Circle makeCircle(Point center, double radius);
+```
+---
+# Verbs And Keywords
+
+.right[
+## Monads
+  verb/noun pair
+]
+
+
+???
+noun => Substantiv
+---
+# No Side Effects, Part1
+```
+public class UserValidator {
+     private Cryptographer cryptographer;
+ public boolean checkPassword(String userName, String password) {
+       User user = UserGateway.findByName(userName);
+       if (user != User.NULL) {
+         String codedPhrase = user.getPhraseEncodedByPassword();
+         String phrase = cryptographer.decrypt(codedPhrase, password);
+         if ("Valid Password".equals(phrase)) {
+           Session.initialize();
+           return true;
+         }
+       }
+       return false;
+     }
+   }
+```
+
+Sideeffect:
+```
+  Session.initialize();
+```
+---
+# No Side Effects, Part2
+If you must have a temporal coupling, you should make it clear in the name of the function.
+```
+checkPasswordAndInitializeSession
+```
+---
+
+# Command Query Separation
+
+Bad:
+```
+if (set(”username”, ”unclebob”)){
+  ...
+}
+```
+Good:
+```
+if (attributeExists(”username”)) {
+     setAttribute(”username”, ”unclebob”);
+     ...
+   }
+```
+Functions should either do something or answer something, **but not both.**
+
+---
+
+# Don't Repeat Yourself
+It bloats the code and will require four-fold modification
+should the algorithm ever have to change.
+It is also a four-fold opportunity for an error of omission.
+
+.left[
+**Eliminating Duplication** - all are, in part:
+* Structured programming
+* Aspect Oriented Programming
+* Component Oriented Programming
+]
+
+Because:
+* Maintaining
+* Fixing
+
+???
+It bloats the code and will require four-fold modification
+should the algorithm ever have to change.
+= Es bläst den Code auf und erfordert eine vierfache Änderung.
+sollte sich der Algorithmus jemals ändern müssen.
+It is also a four-fold opportunity for an error of omission.
+=Es ist auch eine vierfache Gelegenheit für einen Fehler der Unterlassung.
+---
+
+# Structured Programming
+## Dijkstra
+Every function, and every block within a function, should have
+.center[
+**one entry,**
+**one exit**
+]
+
+Means:
+* only be one return statement in a function
+* no break or continue statements in a loop
+.center[
+**and never, ever, any** ***goto statements.***
+]
+
+
+___But you can use these to keep your function small:___
+* occasional multiple return
+* break, or
+* continue statement does no harm
+
+
+
+---
+
+# Reasons For Good Routines
+1. Reduce complexity
+1. Avoid duplicate
+1. Support subclassing
+1. Improve perfomance
+
+---
+Rules for good routines
+<br>1) Don't differeniate names with numbers </br>
+<br>2) Call the routin names as long as necessary </br>
+  --> average: 9-15 char's </br>
+  <br>3) Try to use symetric words </br>
+  <br>--> add/remove  </br>
+  <br>--> begin/end </br>
+  <br>--> get/set </br>
+
+
+    </textarea>
+    <script src="scripts/remark-latest.min.js">
+    </script>
+    <script>
+      let slideshow = remark.create({
+        highlightLanguage: 'java',
+        highlightStyle: 'monokai'
+      });
+    </script>
+
+<!-- css Style for table -->
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+        border: 1px solid black;
+      }
+    </style>
+
+  </body>
+</html>
