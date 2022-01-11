@@ -21,5 +21,10 @@ informations about cleanCode
 * [Jave Code Coverage Tools](https://en.wikipedia.org/wiki/Java_code_coverage_tools)
 * [SonarQube](https://www.sonarqube.org/)
 
-## Good to knwo
+## Good to know
 * [Windows und die Tastatur: Wie sich eine Entscheidung von 1977 bis heute auswirkt](https://t3n.de/news/ibm-tastatur-1977-figma-bug-1380395/?utm_source=email&utm_medium=social&utm_campaign=social-buttons)
+* [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software))
+
+## Tools
+### Obfuscator
+* [ProGuard](https://de.wikipedia.org/wiki/ProGuard)
