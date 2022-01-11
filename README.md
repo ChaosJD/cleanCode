@@ -18,7 +18,7 @@ informations about cleanCode
 
 
 ## Software
-* [Jave Code Coverage Tools](https://en.wikipedia.org/wiki/Java_code_coverage_tools)
+* [Java Code Coverage Tools](https://en.wikipedia.org/wiki/Java_code_coverage_tools)
 * [SonarQube](https://www.sonarqube.org/)
 
 ## Good to know
