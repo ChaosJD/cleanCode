@@ -24,7 +24,9 @@ informations about cleanCode
 ## Good to know
 * [Windows und die Tastatur: Wie sich eine Entscheidung von 1977 bis heute auswirkt](https://t3n.de/news/ibm-tastatur-1977-figma-bug-1380395/?utm_source=email&utm_medium=social&utm_campaign=social-buttons)
 * [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software))
+* [HTML-Options](https://www.w3schools.com/tags/tag_output.asp)
 
 ## Tools
 ### Obfuscator
 * [ProGuard](https://de.wikipedia.org/wiki/ProGuard)
+
