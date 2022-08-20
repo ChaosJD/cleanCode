@@ -30,3 +30,5 @@ informations about cleanCode
 ### Obfuscator
 * [ProGuard](https://de.wikipedia.org/wiki/ProGuard)
 
+#Soundfilter
+* [Resonanzfrequenz RyhtmNation](https://www.heise.de/news/Resonanzfrequenz-Song-von-Janet-Jackson-crashte-reproduzierbar-Laptops-7224035.html)
