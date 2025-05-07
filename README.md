@@ -32,3 +32,6 @@ informations about cleanCode
 
 #Soundfilter
 * [Resonanzfrequenz RyhtmNation](https://www.heise.de/news/Resonanzfrequenz-Song-von-Janet-Jackson-crashte-reproduzierbar-Laptops-7224035.html)
+
+# Code with AI
+[https://www.golem.de/news/softwareentwicklung-absturz-vom-copilot-verursacht-2505-194523-2.html](https://www.golem.de/news/softwareentwicklung-absturz-vom-copilot-verursacht-2505-194523-2.html)
