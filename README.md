@@ -35,3 +35,12 @@ informations about cleanCode
 
 # Code with AI
 [https://www.golem.de/news/softwareentwicklung-absturz-vom-copilot-verursacht-2505-194523-2.html](https://www.golem.de/news/softwareentwicklung-absturz-vom-copilot-verursacht-2505-194523-2.html)
+
+# links
+## heise.de
+1. [https://heise.de/-10667236](https://heise.de/-10667236)
+1. [https://heise.de/-10698575](https://heise.de/-10698575)
+1. [https://heise.de/-10699153](https://heise.de/-10699153))
+1. [https://heise.de/-10711179](https://heise.de/-10711179)
+1. [https://heise.de/-10748532](https://heise.de/-10748532)
+1. [https://heise.de/-10963436](https://heise.de/-10963436)
